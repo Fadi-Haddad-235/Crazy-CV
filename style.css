@@ -6,6 +6,7 @@ body{
     font-size: 20px;
     display: flex;
     justify-content: center;
+    
 }
 table{
 width:50vw;
@@ -17,17 +18,17 @@ flex-direction: column;
 flex-wrap: nowrap;
 justify-content: center;
 align-items: center;
-
+animation: background-color-change 1.5s infinite linear;
 }
 .section1{
 display: flex;
 align-items: center;
 }
 .section1 div{
-    padding-left: 20%;
+    padding-left: 60%;
 }
 .container{
-    width: 70vw;
+    width: 60vw;
     border: 1px solid black;
 }
 .justify-content-around {
@@ -45,19 +46,17 @@ align-items: center;
 
 img{
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
+
+  }
+ img:hover{
+    display: block;
     animation: rotation .1s infinite linear,
     pulse  5s infinite linear;
-  }
-  
+
+ }
   @keyframes rotation {
-    /* from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    } */
     100% {
         transform: rotate(360deg);
       }
@@ -68,3 +67,24 @@ img{
       transform: scale(5);
     }
   }
+
+  @keyframes background-color-change {
+    0% {
+        background-color: rgba(12, 255, 4, 1);
+    }
+    20%{
+        background-color: rgb(4, 255, 117);
+    }
+    40%{
+        background-color: rgb(251, 255, 4);
+    }
+    60%{
+        background-color: rgb(42, 4, 255);
+    }
+    80%{
+        background-color: rgb(255, 4, 4);
+    }
+    100% {
+        background-color: rgba(12, 255, 4, 1);
+    }
+}
