@@ -1,0 +1,44 @@
+table,th, td {
+    border:1px solid black;
+    text-align: center;
+  }
+body{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+table{
+width:50vw;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+
+}
+.section1{
+display: flex;
+justify-content: start;
+}
+.section1 img{
+    padding-right: 20%;
+}
+.container{
+    width: 70vw;
+    border: 1px solid black;
+}
+.justify-content-around {
+    justify-content: space-around!important;
+}
+.d-flex {
+    display: flex!important;
+    flex-direction: row;
+    gap: 200px;
+}
+#contact{
+    text-align: center!important;
+    font-size: 25px;
+}
