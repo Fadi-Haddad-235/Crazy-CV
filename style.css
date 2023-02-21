@@ -21,10 +21,10 @@ align-items: center;
 }
 .section1{
 display: flex;
-justify-content: start;
+align-items: center;
 }
-.section1 img{
-    padding-right: 20%;
+.section1 div{
+    padding-left: 20%;
 }
 .container{
     width: 70vw;
@@ -42,3 +42,29 @@ justify-content: start;
     text-align: center!important;
     font-size: 25px;
 }
+
+img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    animation: rotation .1s infinite linear,
+    pulse  5s infinite linear;
+  }
+  
+  @keyframes rotation {
+    /* from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    } */
+    100% {
+        transform: rotate(360deg);
+      }
+  }
+    
+  @keyframes pulse {
+    50% {
+      transform: scale(5);
+    }
+  }
