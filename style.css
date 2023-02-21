@@ -53,7 +53,7 @@ img{
  img:hover{
     display: block;
     animation: rotation .1s infinite linear,
-    pulse  5s infinite linear;
+    pulse  4s infinite linear;
 
  }
   @keyframes rotation {
@@ -61,30 +61,31 @@ img{
         transform: rotate(360deg);
       }
   }
-    
   @keyframes pulse {
     50% {
       transform: scale(5);
     }
   }
-
   @keyframes background-color-change {
     0% {
-        background-color: rgba(12, 255, 4, 1);
+        background-color: rgb(255, 12, 4);
     }
-    20%{
-        background-color: rgb(4, 255, 117);
+    15%{
+        background-color: rgb(238, 255, 4);
     }
-    40%{
-        background-color: rgb(251, 255, 4);
+    30%{
+        background-color: rgb(46, 255, 4);
+    }
+    45%{
+        background-color: rgb(21, 4, 255);
     }
     60%{
-        background-color: rgb(42, 4, 255);
+        background-color: rgb(255, 4, 38);
     }
-    80%{
-        background-color: rgb(255, 4, 4);
+    80% {
+        background-color: rgb(4, 42, 255);
     }
     100% {
-        background-color: rgba(12, 255, 4, 1);
+        background-color: rgb(255, 4, 4);
     }
 }
